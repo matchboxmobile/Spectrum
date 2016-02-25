@@ -1,0 +1,64 @@
+﻿<UserControl x:Class="ObserverPrototype.Controls.TempraturePicker"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="using:ObserverPrototype.Controls"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             d:DesignHeight="1080"
+             d:DesignWidth="1920">
+
+    <Grid Name="layoutRoot">
+        <Ellipse Width="290"
+                 Height="290"
+                 Fill="White"
+                 Stroke="LightGray"
+                 Name="colourWheel" />
+        <Grid Width="360"
+              Height="360">
+            <Image Source="/Assets/colour_wheel_lifx.png"
+                   Stretch="UniformToFill"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <CompositeTransform ScaleY="-1"
+                                        ScaleX="-1" />
+                </Image.RenderTransform>
+            </Image>
+        </Grid>
+        <Grid Name="spinner"
+              RenderTransformOrigin="0.5,0.5">
+            <Ellipse Width="220"
+                     Height="220"
+                     Fill="White" />
+            <Rectangle Fill="White"
+                       Width="50"
+                       Height="50"
+                       RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <CompositeTransform SkewX="20"
+                                        TranslateY="-90"
+                                        Rotation="52" />
+                </Rectangle.RenderTransform>
+            </Rectangle>
+        </Grid>
+        <Ellipse Fill="White"
+                 Width="200"
+                 Height="200"
+                 Stroke="LightGray"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Center" />
+        <ToggleButton Grid.Column="2"
+                      HorizontalAlignment="Stretch"
+                      IsChecked="{Binding OnOffState}"
+                      FontFamily="Segoe MDL2 Assets"
+                      Content="&#xE7E8;"
+                      Foreground="#4a4e51"
+                      VerticalAlignment="Stretch"
+                      Margin="0,-10,0,0"
+                      FontSize="120"
+                      Tapped="power_Tapped"
+                      Style="{StaticResource BulbToggleButtonStyle}" />
+    </Grid>
+</UserControl>

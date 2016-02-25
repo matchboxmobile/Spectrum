@@ -1,0 +1,16 @@
+﻿[ResourceMetadata]
+"ResourceDimensions"		"scale-100"
+"ResourceDimensions"		"language-en-us"
+
+[Files]
+"C:\Work\Jack\src\Spectrum\Bridge\HeadedAdapterApp\obj\x86\Debug\split.pri"			"resources.pri"
+"C:\Work\Jack\src\Spectrum\Bridge\HeadedAdapterApp\obj\x86\Debug\PackageLayout\WinMetadata\Windows.winmd"			"WinMetadata\Windows.winmd"
+"C:\Work\Jack\src\Spectrum\Bridge\HeadedAdapterApp\obj\x86\Debug\PackageLayout\Properties\Default.rd.xml"			"Properties\Default.rd.xml"
+"C:\Work\Jack\src\Spectrum\Bridge\HeadedAdapterApp\obj\x86\Debug\PackageLayout\HeadedAdapterApp.xr.xml"			"HeadedAdapterApp.xr.xml"
+"C:\Work\Jack\src\Spectrum\Bridge\HeadedAdapterApp\obj\x86\Debug\PackageLayout\Assets\StoreLogo.png"			"Assets\StoreLogo.png"
+"C:\Work\Jack\src\Spectrum\Bridge\HeadedAdapterApp\obj\x86\Debug\PackageLayout\Assets\Square44x44Logo.targetsize-24_altform-unplated.png"			"Assets\Square44x44Logo.targetsize-24_altform-unplated.png"
+"C:\Work\Jack\src\Spectrum\Bridge\HeadedAdapterApp\obj\x86\Debug\PackageLayout\Assets\Square150x150Logo.scale-100.png"			"Assets\Square150x150Logo.scale-100.png"
+"C:\Work\Jack\src\Spectrum\Bridge\HeadedAdapterApp\obj\x86\Debug\PackageLayout\Assets\SplashScreen.scale-100.png"			"Assets\SplashScreen.scale-100.png"
+"C:\Work\Jack\src\Spectrum\Bridge\HeadedAdapterApp\obj\x86\Debug\PackageLayout\ApplicationInsights.config"			"ApplicationInsights.config"
+"C:\Work\Jack\src\Spectrum\Bridge\HeadedAdapterApp\obj\x86\Debug\PackageLayout\AdapterLib\bulb.jpg"			"AdapterLib\bulb.jpg"
+"C:\Work\Jack\src\Spectrum\Bridge\HeadedAdapterApp\obj\x86\Debug\PackageLayout\AdapterLib\bulb.ico"			"AdapterLib\bulb.ico"

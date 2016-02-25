@@ -1,0 +1,8 @@
+﻿[ResourceMetadata]
+"ResourceId"			"split.scale-150"
+"ResourceDimensions"		"scale-150"
+
+[Files]
+"C:\Work\Jack\src\Spectrum\Bridge\HeadedAdapterApp\obj\x86\Debug\split.scale-150.pri"			"resources.pri"
+"C:\Work\Jack\src\Spectrum\Bridge\HeadedAdapterApp\obj\x86\Debug\PackageLayout\Assets\Square150x150Logo.scale-150.png"			"Assets\Square150x150Logo.scale-150.png"
+"C:\Work\Jack\src\Spectrum\Bridge\HeadedAdapterApp\obj\x86\Debug\PackageLayout\Assets\SplashScreen.scale-150.png"			"Assets\SplashScreen.scale-150.png"

@@ -1,0 +1,56 @@
+﻿<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="using:HeadedAdapterApp"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:ViewModels="using:HeadedAdapterApp.ViewModels"
+      x:Class="HeadedAdapterApp.MainPage"
+      mc:Ignorable="d">
+    <Page.Resources>
+        <DataTemplate x:Key="BulbTemplate">
+            
+            <StackPanel Orientation="Horizontal">
+                <Border BorderBrush="Black"
+                        BorderThickness="4"
+                        CornerRadius="150"
+                        Background="{Binding DisplayColor}"
+                        Width="100"
+                        Height="100" />
+                
+                <TextBlock Text="{Binding Name}"
+                           Margin="12,0,0,0"
+                           VerticalAlignment="Center"
+                           FontSize="20" />
+            </StackPanel>
+        </DataTemplate>
+        
+    </Page.Resources>
+
+    <Page.DataContext>
+        <ViewModels:MainPageViewModel />
+    </Page.DataContext>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        
+        <TextBlock x:ConnectionId='1' x:Name="txtStatus"
+                   Text="Idle"
+                   VerticalAlignment="Top"
+                   HorizontalAlignment="Left"
+                   FontSize="25" />
+
+        <Button x:ConnectionId='2' Content="Add Fake Bulb"
+                Grid.Row="1"
+                                     />
+        
+        <ListBox Grid.Row="2"
+                 ItemsSource="{Binding Bulbs}"
+                 ItemTemplate="{StaticResource BulbTemplate}" />
+
+    </Grid>
+</Page>
+

@@ -1,0 +1,7 @@
+C:\Work\Jack\src\IntrospectionXML\lighting\org.allseen.LSF.LampState\org.allseen.LSF.vcxproj;x86
+C:\Work\Jack\src\Spectrum\Bridge\AdapterLib\AdapterLib.csproj;x86
+C:\Work\Jack\src\Spectrum\Bridge\BridgeRT\BridgeRT.vcxproj;x86
+C:\Work\Jack\src\Spectrum\Bridge\BridgeRT\BridgeRT.vcxproj;x86
+C:\Work\Jack\src\Spectrum\Bridge\Common\Common.vcxproj;x86
+C:\Work\Jack\src\Spectrum\Bridge\Common\Common.vcxproj;x86
+C:\Work\Jack\src\Spectrum\Bridge\HeadlessAdapterApp\HeadlessAdapterApp.csproj;x86

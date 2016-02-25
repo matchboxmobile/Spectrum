@@ -1,0 +1,12 @@
+<node name="/helloWorld">
+    <interface name="org.allseen.helloworld">
+        <method name="MethodOne">
+            <arg name="input" type="i" direction="in" />
+            <arg name="output" type="b" direction="out" />
+        </method>
+        <signal name="SignalOne">
+            <arg name="event" type="u" />
+        </signal>
+        <property name="PropertyOne" type="b" access="readwrite" />
+    </interface>
+</node>

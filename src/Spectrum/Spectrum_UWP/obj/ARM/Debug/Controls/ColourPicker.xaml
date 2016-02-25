@@ -1,0 +1,60 @@
+﻿<UserControl x:Class="ObserverPrototype.Controls.ColourPicker"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="using:ObserverPrototype.Controls"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             d:DesignHeight="1080"
+             d:DesignWidth="1920">
+
+    <Grid x:ConnectionId='1' Name="layoutRoot">
+        <Ellipse x:ConnectionId='2' Width="290"
+                 Height="290"
+                 Fill="White"
+                 Stroke="LightGray"
+                 Name="colourWheel" />
+        <Grid Width="360"
+              Height="360">
+            <Image Source="/../ColourWheel.png"
+                   Stretch="UniformToFill"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center" />
+        </Grid>
+        <Grid x:ConnectionId='3' Name="spinner"
+              RenderTransformOrigin="0.5,0.5">
+            <Ellipse Width="220"
+                     Height="220"
+                     Fill="White" />
+            <Rectangle Fill="White"
+                       Width="50"
+                       Height="50"
+                       RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <CompositeTransform SkewX="20"
+                                        TranslateY="-90"
+                                        Rotation="52" />
+                </Rectangle.RenderTransform>
+            </Rectangle>
+        </Grid>
+        <Ellipse Fill="White"
+                 Width="200"
+                 Height="200"
+                 Stroke="LightGray"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Center" />
+        <Button VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Style="{StaticResource emptyButtonSttyle}">
+            <Button.Content>
+                <TextBlock x:ConnectionId='4' Text="&#xE7E8;"
+                           Name="powerButton"
+                           FontFamily="Segoe MDL2 Assets"
+                           Margin="0,-10,0,0"
+                           FontSize="120"
+                                                 />
+            </Button.Content>
+        </Button>
+    </Grid>
+</UserControl>
+

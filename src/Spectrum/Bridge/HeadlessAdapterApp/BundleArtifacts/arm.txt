@@ -1,0 +1,2 @@
+MainPackage=C:\Work\Jack\src\Spectrum\Bridge\HeadlessAdapterApp\bin\ARM\Debug\HeadlessAdapterApp_1.0.0.0_ARM_Debug.appx
+SymbolPackage=C:\Work\Jack\src\Spectrum\Bridge\HeadlessAdapterApp\AppPackages\HeadlessAdapterApp_1.0.0.0_Debug_Test\HeadlessAdapterApp_1.0.0.0_ARM_Debug.appxsym

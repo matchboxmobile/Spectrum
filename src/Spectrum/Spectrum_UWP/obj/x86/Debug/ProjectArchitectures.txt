@@ -1,0 +1,3 @@
+C:\Work\Jack\src\IntrospectionXML\lighting\org.allseen.LSF.LampState\org.allseen.LSF.vcxproj;x86
+C:\Work\Jack\src\Spectrum\org.allseen.LSF.LampDetails\org.allseen.LSF.LampDetails.vcxproj;x86
+C:\Work\Jack\src\Spectrum\Spectrum_UWP\Spectrum.csproj;x86

@@ -1,0 +1,52 @@
+﻿<Page x:Class="ObserverPrototype.Views.TempratureDeviceView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="using:ObserverPrototype.Views"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:controls="using:ObserverPrototype.Controls"
+      xmlns:viewmodel="using:ObserverPrototype.ViewModels"
+      mc:Ignorable="d">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="89*" />
+            <RowDefinition Height="541*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0"
+                   Margin="24,12,24,0"
+                   MaxLines="2"
+                   Text="{Binding Name}"
+                   Foreground="#4a4e51"
+                   FontFamily="Segoe UI Light"
+                   FontSize="26" />
+        <StackPanel Grid.Row="2">
+            <controls:TempraturePicker x:ConnectionId='1' x:Name="tempPicker"
+                                       Angle="{Binding Angle, Mode=OneWay}"
+                                       VerticalAlignment="Top" />
+            <Grid Margin="24,0,24,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="6.8*" />
+                    <ColumnDefinition Width="26*" />
+                    <ColumnDefinition Width="6.8*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="/Assets/light_dark.png"
+                       Stretch="UniformToFill" />
+                <Slider Grid.Column="1"
+                        Foreground="#FF5B5E61"
+                        Background="#FF5B5E61"
+                        Minimum="0"
+                        Maximum="100"
+                        VerticalAlignment="Center"
+                        Margin="12,2,12,0"
+                        Value="{Binding Brightness, Mode=TwoWay}"
+                        Style="{StaticResource AppSliderStyle}" />
+                <Image Grid.Column="2"
+                       Source="/Assets/light_bright.png"
+                       Stretch="UniformToFill" />
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Page>
+

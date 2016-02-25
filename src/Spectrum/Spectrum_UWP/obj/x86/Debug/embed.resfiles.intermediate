@@ -1,0 +1,7 @@
+App.xbf
+Controls\ColourPicker.xbf
+Controls\TempraturePicker.xbf
+Views\ColourDeviceView.xbf
+Views\MainPage.xbf
+Views\Shell.xbf
+Views\TempratureDeviceView.xbf
